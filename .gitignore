@@ -1,0 +1,10 @@
+/node_modules
+/javascript
+/sound
+
+beat.js
+*.env
+*.html
+package.json
+package-lock.json
+

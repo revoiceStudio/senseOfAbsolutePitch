@@ -1,0 +1,22 @@
+{
+    "response":{
+        "version": "2.0",
+        "resultCode": "OK",
+        "output": {},
+        "directives": [
+          {
+            "type": "AudioPlayer.Play",
+            "audioItem": {     
+                "stream": {
+                    "url": "",
+                    "offsetInMilliseconds": 0,
+                    "progressReport": {},
+                    "token": "",
+                    "expectedPreviousToken": ""
+                },
+                "metadata": { }
+            }
+          }
+        ]
+    }
+}
