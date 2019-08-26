@@ -9,6 +9,9 @@ require('dotenv').config({path:'credentials.env'})
 const app = express()
 app.use(express.json())
 
+app.use('/test', (req,res)=>{
+    return res.json("{'hi':'hi'}")
+})
 
 app.use('/SenseOfAbsolutePitch/DoReMiFaSoLaTiDo', async function(req, res, next){
     const parameters = req.body.action.parameters
@@ -96,7 +99,7 @@ app.use('/SenseOfAbsolutePitch/SenseOfAbsolutePitchQuiz_answer', async function(
 })
 
 app.listen(process.env.PORT, () => {
-    console.log('beat app listening on port '+ process.env.PORT)
+    console.log('senseOfAbsolutePitch app listening on port '+ process.env.PORT)
 })
 function generateRandom(min, max) {
     var ranNum = Math.floor(Math.random()*(max-min+1)) + min;
